@@ -1,0 +1,28 @@
+
+config local
+	option enable '1'
+	option interface 'eth0'
+	option port '7547'
+	option ubus_socket '/var/run/ubus/ubus.sock'
+	option date_format '%FT%T%z'
+	option username 'easycwmp'
+	option password 'easycwmp'
+	option authentication 'Digest'
+	option logging_level '3'
+
+config acs
+	option url 'http://192.168.1.110:8080/openacs/acs'
+	option username 'easycwmp'
+	option password 'easycwmp'
+	option periodic_enable '1'
+	option periodic_interval '100'
+	option periodic_time '0001-01-01T00:00:00Z'
+
+config device
+	option manufacturer 'OpenWrt'
+	option oui 'FFFFFF'
+	option product_class 'Generic'
+	option serial_number 'FFFFFF123456'
+	option hardware_version 'v0'
+	option software_version 'r29141-81be8a8869'
+
